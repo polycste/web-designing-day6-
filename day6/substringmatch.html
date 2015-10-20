@@ -1,0 +1,35 @@
+<!Doctype HTML>
+<html>
+<head><title>Substring match in a string</title>
+<script>
+var string1="Bangladesh";
+var string2="sh";
+
+var a;
+var c;
+var b;
+
+for(var i=0;i<string1.length;i++){
+if(string1[i]==string2[0]){
+a=i;
+b=true;
+}
+  for(var j=1; j<string2.length; j++){
+     if(string1[a+1]!=string2[j]){
+         b=false;
+}
+a++;
+
+}
+       if(b=true)
+         {
+          c=i;
+         }
+
+}
+console.log(c);
+
+ 
+</script>
+</head>
+</html>

@@ -1,0 +1,35 @@
+<!Doctype HTML>
+<html>
+<head>
+<title>A building program</title>
+<link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
+<script src="bootstrap.min.js"></script>
+<script>
+	var first=true;
+	var newItem;
+	function appenditem()
+	{
+		 if(first)
+		  {
+		    newItem=document.getElementById("items").innerHTML;
+		    first=false;
+		  }
+		  console.log("inner HTML is", newItem);
+		  document.getElementById("items").innerHTML=document.getElementById("items").innerHTML+newItem;
+
+
+
+	}
+
+	</script>
+	</head>
+	<body>
+	<div id ="items">
+	Item:<input type="text"/>
+	<br>
+	</div><br>
+
+	<button type="button"onClick="appenditem()" value="add item">Add item</button>
+
+	</body>
+</html>
